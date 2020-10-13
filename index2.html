@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lvova_7903</title>
+    <style>
+      :root {
+        --bgc: rgb(255, 255, 255);
+        --fz: 60px;
+        --gap: 10px;
+      }
+
+      body {
+        font-size: var(--fz);
+        text-align: center;
+        background-color: var(--bgc);
+      }
+
+      .grid {
+        grid-auto-rows: 150px;
+      }
+
+      .grid {
+        display: grid;
+        
+      }
+      .grid.grid-3 {
+        grid-template-columns: repeat(8, 2fr);
+      }
+      .gap {
+        gap: var(--gap);
+      }
+      .grid > .grid-col-span-2 {
+        grid-column-end: span 2;
+      }
+
+      .grid > .grid-col-span-3 {
+        grid-column-end: span 3;
+
+      }
+
+      .grid > .grid-col-row-span-1 {
+        grid-column-end: span 2;
+        grid-row-end: span 2;
+        text-align: center;
+      }
+      
+      .grid > .grid-col-row-span-6 {
+        grid-column: span 3;
+        grid-row-end: span 2;
+      }
+
+      .grid > .grid-col-row-span-7 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row: 2 / 5;
+      }
+
+      
+      .grid > .grid-col-row-span-8 {
+        grid-column-start: 6;
+        grid-row: 2 / 4;
+      }
+
+      .grid > .grid-col-row-span-9 {
+        grid-column-start: 8;
+        grid-row-start: 2;
+      }
+
+      .grid > .grid-col-row-span-10 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 3;
+      }
+
+      .grid > .grid-col-row-span-11 {
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 4;
+      }
+
+      .grid > .grid-col-row-span-12 {
+        grid-column-start: 1;
+        grid-row-start: 5;
+      }
+
+      .grid > .grid-col-row-span-13 {
+        grid-column-start: 2;
+        grid-row-start: 5;
+      }
+
+      .grid > .grid-col-row-span-14 {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 5;
+      }
+
+      .grid > .grid-col-row-span-15 {
+        grid-column-start: 5;
+        grid-column-end: 8;
+        grid-row-start: 5;
+      }
+
+      .grid > .grid-col-row-span-16 {
+        grid-column-start: 8;
+        grid-row-start: 5;
+        grid-row: 4 / 6;
+      }
+
+      .grid > .grid-row-span-2 {
+        grid-row-end: span 2;
+      }
+
+      /*Цвета блоков*/
+
+      .Item1{
+        background: rgb(233, 6, 233);
+    }
+
+      .Item2{
+        background: rgb(151, 34, 34);
+    }
+      .Item3{
+        background: rgb(80, 241, 107);
+    }
+      .Item4{
+        background: rgb(196, 77, 23);
+    }
+      .Item5{
+        background: rgb(207, 53, 42);
+    }
+      .Item6{
+        background: rgb(236, 178, 70);
+    }
+
+    .Item7{
+        background: rgb(7, 70, 12);
+    }
+
+    article {
+    padding: 25px 0px 0px 0px;
+   }
+
+      
+    </style>
+  </head>
+  <body>
+    <section id="news" class="grid grid-3 gap p">
+      <article class="grid-col-row-span-1 Item1">1</article>
+      <article class="grid-row-span-2 Item1">2</article>
+      <article class="grid-col-span-3 Item1">3</article>
+      <article class="grid-row-span-2 Item2">4</article>
+      <article class="Item3">5</article>
+      <article class="grid-col-row-span-6 Item4">6</article>
+      <article class="grid-col-row-span-7 Item5">7</article>
+      <article class="grid-col-row-span-8 Item2">8</article>
+      <article class="grid-col-row-span-9 Item6">9</article>
+      <article class="grid-col-row-span-10 Item3">10</article>
+      <article class="grid-col-row-span-11 Item5">11</article>
+      <article class="grid-col-row-span-12 Item7">12</article>
+      <article class="grid-col-row-span-13 Item2">13</article>
+      <article class="grid-col-row-span-14 Item7">14</article>
+      <article class="grid-col-row-span-15 Item5">15</article>
+      <article class="grid-col-row-span-16 Item7">16</article>
+    </section>
+  </body>
+</html>
